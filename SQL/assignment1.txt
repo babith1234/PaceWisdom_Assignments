@@ -1,5 +1,31 @@
-SELECT empname, Sal
+SELECT Ename, Sal
 FROM EMP
 WHERE DeptNo = 10 OR DeptNo = 20;
 
+
+SELECT D.DeptNo, D.name, D.Loc
+FROM DEPT D, EMP E
+WHERE D.DeptNo = E.DeptNo
+GROUP BY(D.DeptNo)
+HAVING COUNT(*)>1;
+
+
+SELECT Ename,Sal,EmpNo
+FROM EMP
+WHERE Ename LIKE 'S%';
+
+
+
+SELECT Ename,Sal,EmpNo
+FROM Emp
+WHERE DATEDIFF(CURRDATE(),Hire_Date)>730;
+
+
+
+SELECT REPLACE(Ename, 'a','#') AS new_name
+FROM EMP
+
+
+SELECT Ename , Mgr
+FROM Emp
 
