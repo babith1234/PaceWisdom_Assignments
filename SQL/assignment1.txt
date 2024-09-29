@@ -1,0 +1,5 @@
+SELECT empname, Sal
+FROM EMP
+WHERE DeptNo = 10 OR DeptNo = 20;
+
+
