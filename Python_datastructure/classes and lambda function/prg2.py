@@ -13,6 +13,7 @@ class Strings:
             else:
                 return False
         return len(list)==0
+    
 s="({[)]"
 print(Strings.valdity(s))
             

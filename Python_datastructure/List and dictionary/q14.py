@@ -1,5 +1,5 @@
 c={}
 if not c:
-    print("It's empty")
+    print("It is empty")
 else:
-    print("It's not empty")
+    print("It is not empty")
