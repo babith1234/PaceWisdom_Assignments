@@ -1,5 +1,5 @@
-a=[{},{},{}]
-for i in a:
+array=[{},{},{}]
+for i in array:
     if i:
         print("False")
         break
